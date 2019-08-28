@@ -1,0 +1,1 @@
+exports.readFileSync = require('fs').readFileSync;

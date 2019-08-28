@@ -1,0 +1,24 @@
+{
+  "name": "kazrenamer",
+  "version": "1.0.1",
+  "description": "Bulk rename files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/erwijet/kaz-renamer.git"
+  },
+  "author": "Tyler Holewinski",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/erwijet/kaz-renamer/issues"
+  },
+  "homepage": "https://github.com/erwijet/kaz-renamer#readme",
+  "devDependencies": {
+    "electron": "^6.0.4"
+  },
+  "dependencies": {}
+}

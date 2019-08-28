@@ -1,0 +1,1 @@
+exports.writeFileSync = require('fs').writeFileSync;
