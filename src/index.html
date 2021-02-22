@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Google Fonts -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+		/>
+
+		<!-- CSS Reset -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+		/>
+
+		<!-- Milligram CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+		/>
+
+		<link rel="stylesheet" href="styles.css" />
+		<script src="index.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div style="padding-top: 5%">
+				<h3 style="text-align: center">Kaz Renamer v3</h3>
+			</div>
+			<div style="padding: 10%; padding-top: 0px">
+				<form>
+					<fieldset>
+						<label for="targetField">Target File</label>
+						<input
+							type="text"
+							placeholder="C:/path/to/basefile.jpg"
+							id="targetField"
+						/>
+						<label for="delimField">Seperate By</label>
+						<select id="delimField">
+							<option value="\n">New Line</option>
+							<option value=",">Comma</option>
+							<option value=" ">Space</option>
+						</select>
+						<label for="copyField">Copies</label>
+						<textarea id="copyField"></textarea>
+						<div>
+							<div style="float: right">
+								<input type="checkbox" id="destroyField" />
+								<label class="label-inline" for="destroyField">Destroy Original</label>
+							</div>
+							<div>
+								<input type="checkbox" id="implyField" checked />
+								<label class="label-inline" for="implyField">Imply Extension</label>
+							</div>
+						</div>
+						<br />
+						<input
+							class="button-primary"
+							onClick="runRenamer();"
+							type="button"
+							value="Renamify!"
+						/>
+						<input
+							type="button"
+							class="button button-outline"
+							onClick="loadTarget();"
+							value="Load Target"
+						/>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

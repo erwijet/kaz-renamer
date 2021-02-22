@@ -1,0 +1,27 @@
+{
+  "name": "kazrenamer",
+  "productName": "KazRenamer",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-packager . --overwrite --asar=true --platform=win32 --out dist/ --arch=x64 --icon=res/icons/icon.ico --prune=true --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Kaz Renamer\"",
+    "build-win-installer": "node src/build-installer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erwijet/kaz-renamer"
+  },
+  "devDependencies": {
+    "electron": "^11.3.0",
+    "electron-packager": "^15.2.0",
+    "electron-winstaller": "^5.0.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron": "^11.3.0"
+  }
+}

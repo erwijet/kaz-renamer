@@ -1,0 +1,15 @@
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container > div {
+	width: 80%;
+	margin: 2%;
+}
+
+/* remove scrollbars everywhere except file entry text box */
+*:not(#copyField)::-webkit-scrollbar {
+	display: none;
+}
