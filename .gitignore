@@ -1,7 +1,7 @@
 yarn.lock
 package-lock.json
 
-.pretterrc
+.prettierrc
 
 dist/
 node_modules/
